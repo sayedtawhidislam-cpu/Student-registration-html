@@ -1,0 +1,170 @@
+<!Doctype html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1">
+    <title> Student Registration System</title>
+    </head>
+
+<body>
+
+     <header>
+        <h1>Student Management System</h1>
+        <p>Student Registration Portal</p>
+        <hr>
+     </header>
+    
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#registration">Registration</a> |
+        <a href="#students">Students</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section id="registration">
+            <h2>Welcome to Student Portal</h2>
+            <p>Register your information using the form below.</p>
+        </section>
+    <hr>
+        <selection id="registration">
+            <h2>Student Registration</h2>
+            <form action="#"method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    <br><br>
+                    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                    <br><br>
+                    
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="01XXXXXXXXX" required>
+                    <br><br>
+
+                    <label for="dob">Date of Birth:</label><br>
+                    <input type="date" id="dob" name="dob">
+                    <br><br>
+
+                    Gender:<br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="others" name="gender" value="others">
+                    <label for="others">Others</label>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Educational Information </legend>
+
+                    <label for="studentid">Student ID:</label>
+                    <input type="text" id="studentid" name="studentid">
+                    <br><br>
+
+
+                    <label for="department">Department:</label><br>
+                    <select id="department" name="department" required>
+                        <option value="">Select Deparment</option>
+                        <option valuse="CSE">Computer Science (CSE)</option>
+                        <option value="EEE">Electrical and Electronics (EEE)</option>
+                        <option value="BBA">Business Administration (BBA)</option>
+                        <option value="ENG">English (ENG)</option>
+                        <option value="Economics">Economics (Economics)</option>
+                    </select>
+                    <br><br>
+
+                    <label for="semester">Semester:</label>
+                    <select id="semester" name="semster" requried>
+                        <option value="">Select Semester</option>
+                        <option value="1st">1st Semester</option>
+                        <option value="2nd">2nd Semester</option>
+                        <option value="3rd">3rd Semester</option>
+                        <option value="4th">4th Semester</option>
+                        <option value="5th">5th Semester</option>
+                    </select>
+                    <br><br>
+
+                    <label for="gpa">Previous GPA:</label><br>
+                    <input type="number" id="gpa" name="gpa" min="0" max="5" step="0.01">
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+
+                    <label for="address">Full Address:</label><br>
+                    <textarea id="address" name="address" rows="5" cols="40" placeholder="Enter your address"></textarea>
+                    <br><br>
+
+                    <label for="photo">Upload student Photo:</label><br>
+                    <input type="file" id="photo" name="photo" accept="image/*">
+                    <br><br>
+
+                    <input type="checkbox" id="items" name="terms" required>
+                    <label for="terms">
+                        I agree to the terms and conditions.
+                    </label>
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Register Student</button>
+                <button type="reset">Clear From</button>
+            </form>
+        </selection>
+
+        <hr>
+
+        <selection id="students">
+            <h2>Sample Student Records</h2>
+
+            <table border="1" cellpadding="10">
+                <tr>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Semester</th>
+                </tr>
+                <tr>
+                        <td>101</td>
+                        <td>Rahim</td>
+                        <td>CSE</td>
+                        <td>1st</td>
+                    </tr>
+
+                    <tr>
+                        <td>102</td>
+                        <td>Karim</td>
+                        <td>EEE</td>
+                        <td>2nd</td>
+                    </tr>
+
+                    <tr>
+                        <td>103</td>
+                        <td>Hasan</td>
+                        <td>BBA</td>
+                        <td>3rd</td>
+                    </tr>
+            </table>
+        </selection>
+    </main>
+    <hr>
+
+    <footer id="contact">
+        <h3>Contact Information</h3>
+        <p>Email: studentportal@example.com</p>
+        <p>© 2026 Student Management System</p>
+    </footer>
+</body>
+</html>
